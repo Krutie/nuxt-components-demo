@@ -17,6 +17,6 @@
     "vue-awesome": "^4.0.2"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^1.0.0"
+    "@nuxtjs/tailwindcss": "^2.0.0"
   }
 }

@@ -7,11 +7,18 @@
 
 module.exports = {
   purge: {
+    enabled: process.env.NODE_ENV === "production",
     content: [
-      "./components/**/**/*.vue",
-      "./pages/**/*.vue",
-      "./layouts/**/*.vue",
+      "components/**/**/*.vue",
+      "components/**/**/*.js",
+      "pages/**/*.vue",
+      "layouts/**/*.vue",
+      "plugins/**/*.js",
+      "nuxt.config.js",
     ],
+    options: {
+      whitelist: ["text-green-500", "bg-green-400"],
+    },
   },
   theme: {},
   variants: {},
