@@ -1,0 +1,71 @@
+<template>
+  <div class="container mx-auto">
+    <div class="p-5">
+      <span class="block text-xl py-2"> Version A </span>
+      Each component manually imported here. Check `pages/version-a.vue` for
+      details.
+    </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-5"
+    >
+      <a-card
+        :padding="2"
+        :border-width="0"
+        border-radius="md"
+        v-for="(n, index) in items"
+        :key="index"
+      >
+        <template v-slot:header>
+          <a-card-item>
+            <span class="text-sm text-gray-800"> A. {{ n.name }}</span>
+            <span class="text-xl text-gray-500 p-3">
+              <icon name="heart" scale="2" />
+            </span>
+          </a-card-item>
+        </template>
+
+        <a-card-content>
+          <span class="text-xl text-center block py-2"> {{ n.subtitle }}</span>
+        </a-card-content>
+
+        <template v-slot:footer>
+          <a-card-title>
+            <span class="block text-xl text-gray-400">
+              <icon name="heart" scale="3" />
+            </span>
+            <span class="block uppercase pt-5"> {{ n.name }} </span>
+          </a-card-title>
+        </template>
+      </a-card>
+    </div>
+  </div>
+</template>
+
+<script>
+import data from "~/static/data.json";
+import ACard from "@/components/ui/a-card/card";
+import ACardContent from "@/components/ui/a-card/content";
+import ACardItem from "@/components/ui/a-card/item";
+import ACardTitle from "@/components/ui/a-card/title";
+import "vue-awesome/icons/heart";
+
+export default {
+  components: {
+    // Try commenting component/s below
+    // and you should see an error message/s stating,
+    // Unknown custom element - ... - did you register the component correctly?
+    // That is because, these components aren't using @nuxt/components module
+    ACard,
+    ACardContent,
+    ACardItem,
+    ACardTitle,
+  },
+  data() {
+    return {
+      desc:
+        "Use the .normal-case utility to preserve the original casing. This is typically used to reset capitalization at different breakpoints.",
+      items: data,
+    };
+  },
+};
+</script>
