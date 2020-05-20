@@ -1,52 +1,53 @@
 <template>
   <div class="container mx-auto">
     <div class="p-5">
-      <span class="block text-xl py-2"> Version B </span>
+      <span class="block text-xl py-2"> B. Using @nuxt/components </span>
       No import statement here! Check `pages/version-b.vue` to see that there
       are no import statements written in script section. @nuxt/component
       configuration can be seen at `nuxt.config.js` file under `components`
       options.
     </div>
+
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-5"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 p-5"
     >
-      <card-body
+      <!-- max-w-xs sm:max-w-xl md:max-w-4xl mx-auto -->
+      <aec-card
         :padding="2"
         :border-width="0"
         border-radius="md"
         v-for="(n, index) in items"
-        :key="index"
+        :key="`n-${index}`"
       >
         <template v-slot:header>
-          <card-item>
+          <aec-card-item>
             <span class="text-sm text-gray-800"> B. {{ n.name }}</span>
             <span :class="`text-xl text-${color}-500 p-3`">
-              <icon name="heart" scale="2" />
+              <icon :name="n.icon" scale="2" />
             </span>
-          </card-item>
+          </aec-card-item>
         </template>
 
-        <card-content>
+        <aec-card-content>
           <span class="text-xl text-center block py-2"> {{ n.subtitle }}</span>
-        </card-content>
+        </aec-card-content>
 
         <template v-slot:footer>
-          <card-title :color="color">
+          <aec-card-title :color="color">
             <span class="block text-xl text-gray-200">
-              <icon name="heart" scale="3" />
+              <icon :name="n.icon" scale="2.5" />
             </span>
             <span class="block uppercase pt-5 font-bold"> {{ n.name }} </span>
-          </card-title>
-          <card-footer> Version B </card-footer>
+          </aec-card-title>
+          <!-- <aec-card-footer> Version B </aec-card-footer> -->
         </template>
-      </card-body>
+      </aec-card>
     </div>
   </div>
 </template>
 
 <script>
 import data from "~/static/data.json";
-import "vue-awesome/icons/heart";
 
 export default {
   data() {
@@ -57,5 +58,11 @@ export default {
       color: "green",
     };
   },
+  async fetch() {
+    this.posts = await this.$http.$get(
+      "https://jsonplaceholder.typicode.com/posts"
+    );
+  },
+  fetchOnServer: false,
 };
 </script>

@@ -1,5 +1,5 @@
 export default {
-  name: "v-card-footer",
+  name: "footnote",
   functional: true,
   props: [],
   render(h, { props, data, children }) {

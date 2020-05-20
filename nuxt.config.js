@@ -27,7 +27,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ["~/plugins/vue-awesome"],
   /*
    ** Nuxt.js dev-modules
    */
@@ -35,6 +35,7 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     "@nuxtjs/tailwindcss",
     "@nuxt/components",
+    "kru-components/src/nuxt", // this needs @nuxt/components to be installed and configured
   ],
   tailwindcss: {
     configPath: "~/tailwind.config.js",
@@ -44,46 +45,25 @@ export default {
   components: {
     dirs: [
       {
-        path: "~/components/ui/b-card", // Correct
-        // pattern: "**/*.{vue}", // { } won't work for single value
-        // pattern: "**/*.vue", // works
-        // pattern: "**/*.{vue,js}", // { } with comma separated values works for multiple values
-
-        // pattern: `**/*.${extensions.join(",")}`,
-
-        // ignore: ["**/*.js"], // Uncomment this,
-        // you should see the error message, `unknown custom element...` for,
-        // <card-footer> and <card-title> because they have .js extension
-        // To ignore multiple file extensions add { } with comma separated values
-        // ignore: ["**/*.{js,ts}"]
-
-        prefix: "card",
-      },
-      {
-        path: "~/node_modules/vue-awesome/components",
-        // transpile true to be tested
-      },
-      {
-        path: "~/node_modules/vue-awesome/",
-        pattern: "**/*.js",
-        // transpile true to be tested
+        path: "~/components/ui-2/", // Correct
+        prefix: "aec",
       },
     ],
   },
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [],
+
+  // ** Nuxt.js modules
+
+  modules: ["@nuxt/http"],
   /*
    ** Build configuration
    */
-  extensions: ["ts", "tsx"],
   build: {
-    additionalExtensions: ["ts", "tsx"],
+    additionalExtensions: ["jsx"],
     transpile: [/^vue-awesome/],
     /*
      ** You can extend webpack config here
      */
+
     extend(config, ctx) {},
   },
 };

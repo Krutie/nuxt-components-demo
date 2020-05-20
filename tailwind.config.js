@@ -17,10 +17,11 @@ module.exports = {
       "nuxt.config.js",
     ],
     options: {
-      whitelist: ["text-green-500", "bg-green-400"],
+      whitelist: ["text-green-500", "bg-green-400", "first"],
     },
   },
-  theme: {},
-  variants: {},
+  variants: {
+    borderWidth: ["responsive", "first", "hover", "focus"],
+  },
   plugins: [],
 };

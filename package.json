@@ -12,7 +12,8 @@
     "deploy": "rm -rf dist && nuxt generate && cd dist && surge ./ --domain http://nuxt-components.surge.sh"
   },
   "dependencies": {
-    "@nuxt/components": "^0.2.0",
+    "@nuxt/components": "^0.2.1",
+    "@nuxt/http": "^0.5.0",
     "nuxt": "^2.0.0",
     "vue-awesome": "^4.0.2"
   },
