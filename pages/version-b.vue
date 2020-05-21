@@ -11,8 +11,7 @@
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 p-5"
     >
-      <!-- max-w-xs sm:max-w-xl md:max-w-4xl mx-auto -->
-      <aec-card
+      <card
         :padding="2"
         :border-width="0"
         border-radius="md"
@@ -20,28 +19,28 @@
         :key="`n-${index}`"
       >
         <template v-slot:header>
-          <aec-card-item>
+          <card-item>
             <span class="text-sm text-gray-800"> B. {{ n.name }}</span>
             <span :class="`text-xl text-${color}-500 p-3`">
               <icon :name="n.icon" scale="2" />
             </span>
-          </aec-card-item>
+          </card-item>
         </template>
 
-        <aec-card-content>
+        <card-content>
           <span class="text-xl text-center block py-2"> {{ n.subtitle }}</span>
-        </aec-card-content>
+        </card-content>
 
         <template v-slot:footer>
-          <aec-card-title :color="color">
+          <card-title :color="color">
             <span class="block text-xl text-gray-200">
               <icon :name="n.icon" scale="2.5" />
             </span>
             <span class="block uppercase pt-5 font-bold"> {{ n.name }} </span>
-          </aec-card-title>
-          <!-- <aec-card-footer> Version B </aec-card-footer> -->
+          </card-title>
+          <card-footer> Version B </card-footer>
         </template>
-      </aec-card>
+      </card>
     </div>
   </div>
 </template>

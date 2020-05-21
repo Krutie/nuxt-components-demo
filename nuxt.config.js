@@ -44,9 +44,15 @@ export default {
   },
   components: {
     dirs: [
+      // Path as a String, also default
+      // "~/components",
+      // Path as an Object
       {
-        path: "~/components/ui-2/", // Correct
-        prefix: "aec",
+        path: "~/components/ui-2/",
+        // prefix: "aex",
+        // ignore: ["**/*.js"], // will ignore js files found directly under components/ui-2 and sub-folders
+        // ignore: ["**/card/*.js"], // will ignore js files found under components/ui-2/card
+        // ignore: ["**/list/*.js"], // will ignore js files found under components/ui-2/list
       },
     ],
   },

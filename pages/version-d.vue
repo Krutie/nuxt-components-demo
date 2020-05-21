@@ -9,17 +9,36 @@
         <p v-else-if="$fetchState.error">
             Error while fetching posts: {{ $fetchState.error.message }}
         </p>
-        <lazy-aec-list v-else>
-            <aec-list-item
+
+        <!-- DEFAULT -->
+        <!--         <list v-else>
+            <list-item v-for="(post, index) in posts" :key="`post-${index}`">
+                {{ post.title }}
+                <list-item-icon icon="code" />
+            </list-item>
+        </list> -->
+
+        <!-- LAZY LOADING -->
+        <lazy-list v-else>
+            <lazy-list-item
                 v-for="(post, index) in posts"
                 :key="`post-${index}`"
             >
                 {{ post.title }}
-            </aec-list-item>
-            <!-- <aec-list-item v-for="post in posts">
-                {{ post }}
-            </aec-list-item> -->
-        </lazy-aec-list>
+                <lazy-list-item-icon icon="code" />
+            </lazy-list-item>
+        </lazy-list>
+
+        <!-- LAZY WITH PREFIX -->
+        <!-- <lazy-aex-list v-else>
+            <lazy-aex-list-item
+                v-for="(post, index) in posts"
+                :key="`post-${index}`"
+            >
+                {{ post.title }}
+                <lazy-aex-list-item-icon icon="code" />
+            </lazy-aex-list-item>
+        </lazy-aex-list> -->
     </div>
 </template>
 <script>
