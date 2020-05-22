@@ -2,8 +2,8 @@
   <div class="container mx-auto">
     <div class="p-5">
       <span class="block text-xl py-2"> A. Manual Import </span>
-      Each component manually imported here. Check `pages/version-a.vue` for
-      details.
+      <!-- Each component manually imported here. Check `pages/version-a.vue` for
+      details. -->
     </div>
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 p-5"
@@ -55,7 +55,8 @@ export default {
     // Try commenting component/s below
     // and you should see an error message/s stating,
     // Unknown custom element - ... - did you register the component correctly?
-    // That is because, these components aren't using @nuxt/components module
+    // That is because, these components aren't using
+    // @nuxt/components module
     ACard,
     ACardContent,
     ACardItem,

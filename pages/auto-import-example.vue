@@ -2,10 +2,10 @@
   <div class="container mx-auto">
     <div class="p-5">
       <span class="block text-xl py-2"> B. Using @nuxt/components </span>
-      No import statement here! Check `pages/version-b.vue` to see that there
+      <!-- No import statement here! Check `pages/version-b.vue` to see that there
       are no import statements written in script section. @nuxt/component
       configuration can be seen at `nuxt.config.js` file under `components`
-      options.
+      options. -->
     </div>
 
     <div
@@ -38,7 +38,9 @@
             </span>
             <span class="block uppercase pt-5 font-bold"> {{ n.name }} </span>
           </card-title>
-          <card-footer> Version B </card-footer>
+          <!-- <card-footer> is a .js component. -->
+          <!-- Uncomment below while trying ignore pattern. -->
+          <!-- <card-footer> Version B </card-footer> -->
         </template>
       </card>
     </div>

@@ -2,8 +2,8 @@
     <div class="container mx-auto">
         <div class="p-5">
             <span class="block text-xl py-2"> D. Lazy Loading </span>
-            Simply prefix components with `lazy` to import them dynamically,
-            only when needed.
+            <!-- Simply prefix components with `lazy` to import them dynamically,
+            only when needed. -->
         </div>
         <p v-if="$fetchState.pending">Fetching posts...</p>
         <p v-else-if="$fetchState.error">
@@ -49,9 +49,10 @@ export default {
         };
     },
     async fetch() {
-        this.posts = await this.$http.$get(
+        const data = await fetch(
             "https://jsonplaceholder.typicode.com/posts"
-        );
+        ).then((res) => res.json());
+        this.posts = data.slice(0, 10);
     },
     fetchOnServer: false,
 };
