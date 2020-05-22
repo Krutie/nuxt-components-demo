@@ -8,6 +8,7 @@ import "vue-awesome/icons/fire";
 import "vue-awesome/icons/brain";
 import "vue-awesome/icons/binoculars";
 import "vue-awesome/icons/code";
+import "vue-awesome/icons/link";
 
 /* Register component globally */
 import Icon from "vue-awesome/components/Icon";

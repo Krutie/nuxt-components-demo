@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Awesomeness",
+    "subtitle": "When I get sad, I stop being sad and be awesome instead. True Story.",
+    "icon": "bolt"
+  },
+  {
+    "name": "Perfection",
+    "subtitle": "It's not good enough to win, everybody should lose.",
+    "icon": "cogs"
+  },
+  {
+    "name": "Lead with Vision",
+    "subtitle": "Leaders keep their eyes on the horizon, not just on the bottom line.",
+    "icon": "fire"
+  },
+  {
+    "name": "Conformity",
+    "subtitle": "It's the one who is different that gets left out in the cold.",
+    "icon": "brain"
+  },
+  {
+    "name": "Teamwork",
+    "subtitle": "The chain is only as strong as the weakest link.",
+    "icon": "link"
+  },
+  {
+    "name": "Strength",
+    "subtitle": "What the mind can conceive, it can achieve.",
+    "icon": "code"
+  }
+]

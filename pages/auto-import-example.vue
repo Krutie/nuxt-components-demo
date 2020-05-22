@@ -28,7 +28,7 @@
         </template>
 
         <card-content>
-          <span class="text-xl text-center block py-2"> {{ n.subtitle }}</span>
+          <span class="text-md text-center block py-2"> {{ n.subtitle }}</span>
         </card-content>
 
         <template v-slot:footer>
@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import data from "~/static/data.json";
+import data from "~/static/barney.json";
 
 export default {
   data() {
