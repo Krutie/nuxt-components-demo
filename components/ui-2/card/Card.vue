@@ -8,14 +8,16 @@ export default {
         },
         borderWidth: {
             type: Number,
+            default: 0,
         },
         borderRadius: {
             type: String,
+            default: "md",
         },
     },
     computed: {
         myClass() {
-            return `shadow relative flex flex-col p-${this.padding} border-${this.borderWidth} rounded-${this.borderRadius} border-gray-600 bg-gray-100`;
+            return `shadow flex flex-col p-${this.padding} border-${this.borderWidth} rounded-${this.borderRadius} border-gray-600 bg-gray-100`;
         },
     },
     render: function(h) {
@@ -24,7 +26,6 @@ export default {
             {
                 class: this.myClass,
                 props: this.$options.propsData,
-                id: "card",
             },
             [this.$slots.header, this.$slots.default, this.$slots.footer]
         );

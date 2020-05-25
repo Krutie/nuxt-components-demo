@@ -10,7 +10,7 @@
     >
       <a-card
         :padding="2"
-        :border-width="0"
+        :border-width="2"
         border-radius="md"
         v-for="(n, index) in items"
         :key="`item-${index}`"
@@ -18,7 +18,7 @@
         <template v-slot:header>
           <a-card-item>
             <span class="text-sm text-gray-800"> A. {{ n.name }}</span>
-            <span class="text-xl text-gray-500 p-3">
+            <span class="text-xl text-indigo-700 p-3">
               <icon :name="n.icon" scale="2" />
             </span>
           </a-card-item>

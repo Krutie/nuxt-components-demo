@@ -13,15 +13,14 @@
     >
       <card
         :padding="2"
-        :border-width="0"
         border-radius="md"
         v-for="(n, index) in items"
         :key="`n-${index}`"
       >
         <template v-slot:header>
           <card-item>
-            <span class="text-sm text-gray-800"> B. {{ n.name }}</span>
-            <span :class="`text-xl text-${color}-500 p-3`">
+            <span class="text-sm text-gray-800"> {{ n.name }}</span>
+            <span :class="`text-xl text-indigo-700 p-3`">
               <icon :name="n.icon" scale="2" />
             </span>
           </card-item>
@@ -56,7 +55,7 @@ export default {
       desc:
         "Use the .normal-case utility to preserve the original casing. This is typically used to reset capitalization at different breakpoints.",
       items: data,
-      color: "green",
+      color: "indigo",
     };
   },
   async fetch() {

@@ -17,7 +17,7 @@ module.exports = {
       "nuxt.config.js",
     ],
     options: {
-      whitelist: ["text-green-500", "bg-green-400", "first"],
+      whitelist: ["text-indigo-500", "bg-indigo-400", "first"],
     },
   },
   variants: {

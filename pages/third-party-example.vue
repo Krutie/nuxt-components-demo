@@ -13,6 +13,6 @@
 </template>
 <style>
 button {
-  @apply bg-green-400 p-3 border rounded-md;
+  @apply bg-indigo-700 p-3 border rounded-md text-white;
 }
 </style>

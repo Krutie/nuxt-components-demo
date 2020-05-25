@@ -11,19 +11,19 @@
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/auto-import-example" class="hover:text-green-500">
+        <nuxt-link to="/auto-import-example" class="hover:text-indigo-700">
           <span class="block font-bold"> B </span>
           <span class="text-sm">Auto Import</span>
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/third-party-example" class="hover:text-green-500">
+        <nuxt-link to="/third-party-example" class="hover:text-indigo-700">
           <span class="block font-bold"> C </span>
           <span class="text-sm">3rd-Party Library</span>
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/lazy-loading-example" class="hover:text-green-500">
+        <nuxt-link to="/lazy-loading-example" class="hover:text-indigo-700">
           <span class="block font-bold"> D </span>
           <span class="text-sm">Lazy Loading</span>
         </nuxt-link>
@@ -33,15 +33,15 @@
     <div class="py-10 px-5 my-5 border rounded-md">
       <div>
         Supporting Article -
-        <a class="text-green-500 hover:text-green-700" href="" target="_blank"
+        <a class="text-indigo-600 hover:text-indigo-800" href="" target="_blank"
           >TBA</a
         >
       </div>
       <div>
-        Github -
+        Sample Project Repo -
         <a
-          class="text-green-500 hover:text-green-700"
-          href="https://github.com/nuxt/components"
+          class="text-indigo-600 hover:text-indigo-800"
+          href="https://github.com/Krutie/nuxt-components-demo"
           target="_blank"
           >https://github.com/Krutie/nuxt-components-demo</a
         >
@@ -49,7 +49,7 @@
       <div>
         @nuxt/components Module -
         <a
-          class="text-green-500 hover:text-green-700"
+          class="text-indigo-600 hover:text-indigo-800"
           href="https://www.npmjs.com/package/@nuxt/components"
           target="_blank"
         >
@@ -65,6 +65,6 @@ li {
   @apply inline py-2 px-3 border-2 rounded-md mx-2 text-gray-600 text-center;
 }
 .nuxt-link-active {
-  @apply text-green-500;
+  @apply text-indigo-700;
 }
 </style>
