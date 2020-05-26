@@ -1,5 +1,5 @@
 export default {
-  name: "heading",
+  name: "CardTitle",
   functional: true,
   props: {
     color: {

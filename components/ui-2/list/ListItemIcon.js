@@ -1,7 +1,7 @@
 import Icon from "vue-awesome/components/Icon";
 
 export default {
-  name: "footnote",
+  name: "ListItemIcon",
   functional: true,
   props: {
     icon: {

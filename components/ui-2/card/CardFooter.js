@@ -1,5 +1,5 @@
 export default {
-  name: "footnote",
+  name: "CardFooter",
   functional: true,
   props: [],
   render(h, { props, data, children }) {

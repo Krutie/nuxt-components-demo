@@ -44,7 +44,7 @@ export default {
   },
   components: {
     dirs: [
-      // Path as a String, also default
+      // default path as a String
       // "~/components",
       // Path as an Object
       {
@@ -57,8 +57,13 @@ export default {
     ],
   },
 
-  // ** Nuxt.js modules
+  /* top-level ignore property
+     lazy-loading-example.vue page won't be generated during 
+     npm run generate 
+  */
+  // ignore: "pages/lazy-loading-example.vue",
 
+  // ** Nuxt.js modules
   modules: [],
   /*
    ** Build configuration

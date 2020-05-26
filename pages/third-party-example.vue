@@ -2,7 +2,7 @@
   <div class="container mx-auto">
     <div class="p-5">
       <span class="block text-xl py-2">
-        C. Third-party Component library
+        C. Third-party component library
       </span>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 p-5">

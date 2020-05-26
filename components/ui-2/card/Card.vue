@@ -1,6 +1,7 @@
 <script>
 import Vue from "vue";
 export default {
+    name: "Card",
     props: {
         padding: {
             type: Number,

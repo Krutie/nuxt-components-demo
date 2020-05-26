@@ -1,7 +1,9 @@
 <template>
   <div class="container mx-auto">
     <div class="p-5">
-      <span class="block text-xl py-2"> B. Using @nuxt/components </span>
+      <span class="block text-xl py-2">
+        B. Auto-import using @nuxt/components
+      </span>
       <!-- No import statement here! Check `pages/version-b.vue` to see that there
       are no import statements written in script section. @nuxt/component
       configuration can be seen at `nuxt.config.js` file under `components`

@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto">
         <div class="p-5">
-            <span class="block text-xl py-2"> D. Lazy Loading </span>
+            <span class="block text-xl py-2"> D. Lazy loading </span>
             <!-- Simply prefix components with `lazy` to import them dynamically,
             only when needed. -->
         </div>
@@ -25,7 +25,7 @@
                 :key="`post-${index}`"
             >
                 {{ post.title }}
-                <lazy-list-item-icon icon="code" />
+                <lazy-list-item-icon icon="code"> </lazy-list-item-icon>
             </lazy-list-item>
         </lazy-list>
 
