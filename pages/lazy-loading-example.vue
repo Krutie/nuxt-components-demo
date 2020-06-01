@@ -54,6 +54,6 @@ export default {
         ).then((res) => res.json());
         this.posts = data.slice(0, 10);
     },
-    fetchOnServer: false,
+    // fetchOnServer: false,
 };
 </script>

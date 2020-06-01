@@ -37,31 +37,45 @@ export default {
     "@nuxt/components",
     "kru-components/src/nuxt", // this needs @nuxt/components to be installed and configured
   ],
-  tailwindcss: {
-    configPath: "~/tailwind.config.js",
-    cssPath: "~/assets/css/tailwind.css",
-    exposeConfig: true,
-  },
-  components: {
-    dirs: [
-      // default path as a String
-      // "~/components",
-      // Path as an Object
-      {
-        path: "~/components/ui-2/",
-        // prefix: "aex",
-        // ignore: ["**/*.js"], // will ignore js files found directly under components/ui-2 and sub-folders
-        // ignore: ["**/card/*.js"], // will ignore js files found under components/ui-2/card
-        // ignore: ["**/list/*.js"], // will ignore js files found under components/ui-2/list
-      },
-    ],
-  },
+
+  /* Module Option as a Boolean */
+  components: true,
+
+  /* Module Option as an array of Strings */
+  // components: ["~/components/ui-2/"],
+
+  /* Module Option as an array of Objects */
+  // components: [
+  //   {
+  //     path: "~/components/ui-2/",
+  //     // prefix: "aex",
+  //     // ignore: ["**/*.js"], // will ignore js files found directly under components/ui-2 and sub-folders
+  //     // ignore: ["**/card/*.js"], // will ignore js files found under components/ui-2/card
+  //     // ignore: ["**/list/*.js"], // will ignore js files found under components/ui-2/list
+  //   },
+  // ],
+
+  /* Module Option as an array of Objects within `dirs` array */
+  // components: {
+  //   dirs: [
+  //     {
+  //       path: "~/components/ui-2/",
+  //       prefix: "aex"
+  //     },
+  //   ],
+  // },
 
   /* top-level ignore property
      lazy-loading-example.vue page won't be generated during 
      npm run generate 
   */
   // ignore: "pages/lazy-loading-example.vue",
+
+  tailwindcss: {
+    configPath: "~/tailwind.config.js",
+    cssPath: "~/assets/css/tailwind.css",
+    exposeConfig: true,
+  },
 
   // ** Nuxt.js modules
   modules: [],

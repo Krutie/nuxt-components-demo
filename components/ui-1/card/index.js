@@ -1,6 +1,6 @@
-import ACard from "@/components/ui-1/card/card";
-import ACardContent from "@/components/ui-1/card/content";
-import ACardItem from "@/components/ui-1/card/item";
-import ACardHeading from "@/components/ui-1/card/heading";
+import ACard from "@/components/ui-1/card/ACard";
+import ACardContent from "@/components/ui-1/card/ACardContent";
+import ACardItem from "@/components/ui-1/card/ACardItem";
+import ACardHeading from "@/components/ui-1/card/ACardHeading";
 
 export { ACard, ACardContent, ACardItem, ACardHeading };
