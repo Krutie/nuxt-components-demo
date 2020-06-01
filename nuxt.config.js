@@ -39,21 +39,21 @@ export default {
   ],
 
   /* Module Option as a Boolean */
-  components: true,
+  // components: true,
 
   /* Module Option as an array of Strings */
   // components: ["~/components/ui-2/"],
 
   /* Module Option as an array of Objects */
-  // components: [
-  //   {
-  //     path: "~/components/ui-2/",
-  //     // prefix: "aex",
-  //     // ignore: ["**/*.js"], // will ignore js files found directly under components/ui-2 and sub-folders
-  //     // ignore: ["**/card/*.js"], // will ignore js files found under components/ui-2/card
-  //     // ignore: ["**/list/*.js"], // will ignore js files found under components/ui-2/list
-  //   },
-  // ],
+  components: [
+    {
+      path: "~/components/ui-2/",
+      // prefix: "aex",
+      // ignore: ["**/*.js"], // will ignore js files found directly under components/ui-2 and sub-folders
+      // ignore: ["**/Card/*.js"], // will ignore js files found under components/ui-2/card
+      // ignore: ["**/List/*.js"], // will ignore js files found under components/ui-2/list
+    },
+  ],
 
   /* Module Option as an array of Objects within `dirs` array */
   // components: {
