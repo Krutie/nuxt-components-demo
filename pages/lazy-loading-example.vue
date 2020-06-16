@@ -2,8 +2,7 @@
     <div class="container mx-auto">
         <div class="p-5">
             <span class="block text-xl py-2"> D. Lazy loading </span>
-            <!-- Simply prefix components with `lazy` to import them dynamically,
-            only when needed. -->
+            <!-- prefix components with `lazy` to import them dynamically when needed. -->
         </div>
         <p v-if="$fetchState.pending">Fetching posts...</p>
         <p v-else-if="$fetchState.error">
@@ -11,7 +10,7 @@
         </p>
 
         <!-- DEFAULT -->
-        <!--         <list v-else>
+        <!-- <list v-else>
             <list-item v-for="(post, index) in posts" :key="`post-${index}`">
                 {{ post.title }}
                 <list-item-icon icon="code" />
@@ -29,7 +28,7 @@
             </lazy-list-item>
         </lazy-list>
 
-        <!-- LAZY WITH PREFIX -->
+        <!-- LAZY WITH `aex` PREFIX -->
         <!-- <lazy-aex-list v-else>
             <lazy-aex-list-item
                 v-for="(post, index) in posts"
@@ -55,5 +54,10 @@ export default {
         this.posts = data.slice(0, 10);
     },
     // fetchOnServer: false,
+    mounted() {
+        console.log(
+            "D. Lazy Loading > Inspect Network tab to see individual bundles of `List.js`, `ListItem.js` and `ListItemIcon.js`."
+        );
+    },
 };
 </script>

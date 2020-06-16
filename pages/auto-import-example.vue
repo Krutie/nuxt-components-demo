@@ -54,17 +54,9 @@ import data from "~/static/barney.json";
 export default {
   data() {
     return {
-      desc:
-        "Use the .normal-case utility to preserve the original casing. This is typically used to reset capitalization at different breakpoints.",
       items: data,
       color: "indigo",
     };
   },
-  async fetch() {
-    this.posts = await this.$http.$get(
-      "https://jsonplaceholder.typicode.com/posts"
-    );
-  },
-  fetchOnServer: false,
 };
 </script>

@@ -28,15 +28,24 @@
           <span class="text-sm">Lazy Loading</span>
         </nuxt-link>
       </li>
+      <li>
+        <nuxt-link
+          to="/multi-file-component-example"
+          class="hover:text-indigo-700"
+        >
+          <span class="block font-bold"> E </span>
+          <span class="text-sm">Multi-file Component</span>
+        </nuxt-link>
+      </li>
     </ul>
     <nuxt />
     <div class="py-10 px-5 my-5 border rounded-md">
-      <div>
+      <!--  <div>
         Supporting Article -
         <a class="text-indigo-600 hover:text-indigo-800" href="" target="_blank"
           >TBA</a
         >
-      </div>
+      </div> -->
       <div>
         Sample Project Repo -
         <a

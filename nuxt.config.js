@@ -31,21 +31,24 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    "@nuxtjs/tailwindcss",
-    "@nuxt/components",
-    "kru-components/src/nuxt", // this needs @nuxt/components to be installed and configured
-  ],
+  buildModules: ["@nuxtjs/tailwindcss", "kru-components/src/nuxt"],
 
   /* Module Option as a Boolean */
   // components: true,
 
-  /* Module Option as an array of Strings */
-  // components: ["~/components/ui-2/"],
-
-  /* Module Option as an array of Objects */
+  /* Module Option as an array */
   components: [
+    // Module Option as an array of Strings
+    // "~/components/ui-1/",
+
+    // Module Option as an array of Objects
+    {
+      path: "~/components/ui-2/BaseButton/",
+    },
+    {
+      path: "~/components/ui-2/MagicButton/",
+      extensions: ["vue"],
+    },
     {
       path: "~/components/ui-2/",
       // prefix: "aex",
@@ -54,16 +57,6 @@ export default {
       // ignore: ["**/List/*.js"], // will ignore js files found under components/ui-2/list
     },
   ],
-
-  /* Module Option as an array of Objects within `dirs` array */
-  // components: {
-  //   dirs: [
-  //     {
-  //       path: "~/components/ui-2/",
-  //       prefix: "aex"
-  //     },
-  //   ],
-  // },
 
   /* top-level ignore property
      lazy-loading-example.vue page won't be generated during 

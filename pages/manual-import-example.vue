@@ -44,12 +44,10 @@
 <script>
 import data from "~/static/barney.json";
 
-import {
-  ACard,
-  ACardContent,
-  ACardItem,
-  ACardHeading,
-} from "@/components/ui-1/card/";
+import ACard from "@/components/ui-1/Card/ACard";
+import ACardContent from "@/components/ui-1/Card/ACardContent";
+import ACardItem from "@/components/ui-1/Card/ACardItem";
+import ACardHeading from "@/components/ui-1/Card/ACardHeading";
 
 export default {
   components: {
@@ -65,8 +63,6 @@ export default {
   },
   data() {
     return {
-      desc:
-        "Use the .normal-case utility to preserve the original casing. This is typically used to reset capitalization at different breakpoints.",
       items: data,
     };
   },
