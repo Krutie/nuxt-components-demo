@@ -1,79 +1,105 @@
 <template>
-  <div class="md:max-w-4xl max-w-xs sm:max-w-xl md:max-w-4xl mx-auto">
-    <h1 class="text-3xl text-center py-4">
-      <nuxt-link to="/"> @nuxt/components Sample Project</nuxt-link>
-    </h1>
-    <ul class="p-5 flex justify-center">
-      <li>
-        <nuxt-link to="/manual-import-example" class="hover:text-gray-900">
-          <span class="block font-bold"> A </span>
-          <span class="text-sm">Manual Import</span>
+  <div class="mx-auto">
+    <header class="py-3 pl-5">
+      <h1 class="text-xl">
+        <nuxt-link to="/">
+          <span class="font-bold"> @nuxt/components </span>
+          Sample Project
         </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/auto-import-example" class="hover:text-indigo-700">
-          <span class="block font-bold"> B </span>
-          <span class="text-sm">Auto Import</span>
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/third-party-example" class="hover:text-indigo-700">
-          <span class="block font-bold"> C </span>
-          <span class="text-sm">3rd-Party Library</span>
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/lazy-loading-example" class="hover:text-indigo-700">
-          <span class="block font-bold"> D </span>
-          <span class="text-sm">Lazy Loading</span>
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link
-          to="/multi-file-component-example"
-          class="hover:text-indigo-700"
-        >
-          <span class="block font-bold"> E </span>
-          <span class="text-sm">Multi-file Component</span>
-        </nuxt-link>
-      </li>
-    </ul>
-    <nuxt />
-    <div class="py-10 px-5 my-5 border rounded-md">
+      </h1>
+    </header>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12">
+      <aside
+        class="col-span-3 bg-gray-800 md:rounded-l-none md:rounded-r-lg sm:h-auto md:h-screen py-5"
+      >
+        <span class="block text-gray-600 text-2xl pl-5"> Examples </span>
+        <ul>
+          <li>
+            <nuxt-link
+              to="/manual-import-example"
+              class="text-gray-500 text-md hover:text-indigo-500"
+            >
+              A. Manual Import
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              to="/auto-import-example"
+              class="text-gray-500 text-md hover:text-indigo-500"
+            >
+              B. Auto Import
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              to="/multi-file-component-example"
+              class="text-gray-500 text-md hover:text-indigo-500"
+            >
+              C. Multi-file Component
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              to="/lazy-loading-example"
+              class="text-gray-500 text-md hover:text-indigo-500"
+            >
+              D. Lazy Loading
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              to="/third-party-example"
+              class="text-gray-500 text-md hover:text-indigo-500"
+            >
+              E. 3rd-Party Library
+            </nuxt-link>
+          </li>
+        </ul>
+      </aside>
+      <div
+        class="col-span-9 md:max-w-4xl max-w-xs sm:max-w-xl md:max-w-4xl mx-auto px-5"
+      >
+        <nuxt />
+      </div>
+    </div>
+    <footer
+      class="p-5 sm:border-t-2 md:border-t-0 border-b-2 text-center text-lg"
+    >
+      <span class="text-gray-500"> ... ... ... </span>
       <!--  <div>
-        Supporting Article -
         <a class="text-indigo-600 hover:text-indigo-800" href="" target="_blank"
-          >TBA</a
+          >Supporting Article</a
         >
       </div> -->
       <div>
-        Sample Project Repo -
         <a
           class="text-indigo-600 hover:text-indigo-800"
           href="https://github.com/Krutie/nuxt-components-demo"
           target="_blank"
-          >https://github.com/Krutie/nuxt-components-demo</a
+          >Sample Project Repo</a
         >
       </div>
       <div>
-        @nuxt/components Module -
         <a
           class="text-indigo-600 hover:text-indigo-800"
           href="https://www.npmjs.com/package/@nuxt/components"
           target="_blank"
         >
-          https://www.npmjs.com/package/@nuxt/components
+          @nuxt/components Module
         </a>
       </div>
-    </div>
+    </footer>
   </div>
 </template>
 
 <style>
 li {
-  @apply inline py-2 px-3 border-2 rounded-md mx-2 text-gray-600 text-center;
+  @apply m-2 py-2 px-3 mx-2 text-gray-300;
 }
 .nuxt-link-active {
   @apply text-indigo-700;
+}
+.nuxt-link-exact-active {
+  @apply text-indigo-500 font-bold;
 }
 </style>

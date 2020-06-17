@@ -1,12 +1,15 @@
 <template>
   <div class="container mx-auto">
-    <div class="p-5">
-      <span class="block text-xl py-2"> A. Manual import </span>
+    <div class="pb-5">
+      <h2 class="text-xl text-center py-4">
+        <span class="font-bold"> A. </span>
+        Manual import
+      </h2>
       <!-- Each component manually imported here. Check `pages/version-a.vue` for
       details. -->
     </div>
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 p-5"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8"
     >
       <a-card
         :padding="2"

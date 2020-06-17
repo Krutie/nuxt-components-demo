@@ -1,9 +1,11 @@
 <template>
   <div class="container mx-auto">
-    <div class="p-5">
-      <span class="block text-xl py-2">
-        B. Auto-import using @nuxt/components
-      </span>
+    <div class="pb-5">
+      <h2 class="text-xl text-center py-4">
+        <span class="font-bold"> B. </span>
+        Auto-import using @nuxt/components
+      </h2>
+      <!-- </span> -->
       <!-- No import statement here! Check `pages/version-b.vue` to see that there
       are no import statements written in script section. @nuxt/component
       configuration can be seen at `nuxt.config.js` file under `components`
@@ -11,7 +13,7 @@
     </div>
 
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 p-5"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8"
     >
       <card
         :padding="2"

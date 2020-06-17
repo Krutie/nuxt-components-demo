@@ -3,9 +3,9 @@ import Vue from "vue";
 export default {
     name: "item",
     functional: true,
-    render: function(h, { props, slots }) {
+    render: function(h, { children }) {
         const itemClass = "flex justify-between items-center";
-        return h("div", { class: itemClass }, [slots().default]);
+        return h("div", { class: itemClass }, children);
     },
 };
 </script>

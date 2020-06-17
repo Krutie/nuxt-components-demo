@@ -1,12 +1,13 @@
 <template>
   <div class="container mx-auto">
-    <div class="p-5">
-      <span class="block text-xl py-2">
-        E. Multi-file Component
-      </span>
+    <div class="pb-5">
+      <h2 class="text-xl text-center py-4">
+        <span class="font-bold"> C. </span>
+        Multi-file Component
+      </h2>
     </div>
 
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 p-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
       <magic-button> Magic Button </magic-button>
       <base-button> Base Button </base-button>
     </div>

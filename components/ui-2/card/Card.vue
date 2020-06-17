@@ -26,7 +26,6 @@ export default {
             "div",
             {
                 class: this.myClass,
-                props: this.$options.propsData,
             },
             [this.$slots.header, this.$slots.default, this.$slots.footer]
         );

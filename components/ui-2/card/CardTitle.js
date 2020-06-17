@@ -6,8 +6,8 @@ export default {
       type: String,
     },
   },
-  render(h, { props, slots }) {
+  render(h, { props, children }) {
     const titleClass = `text-center py-5 text-white rounded-bl-md rounded-tl-full -mx-1 -mb-1 bg-${props.color}-800`;
-    return h("div", { class: titleClass }, [slots().default]);
+    return h("div", { class: titleClass }, children);
   },
 };
