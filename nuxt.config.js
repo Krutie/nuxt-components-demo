@@ -43,6 +43,9 @@ export default {
 
     // Module Option as an array of Objects
     {
+      path: "~/components/layout/",
+    },
+    {
       path: "~/components/ui-2/BaseButton/",
     },
     {

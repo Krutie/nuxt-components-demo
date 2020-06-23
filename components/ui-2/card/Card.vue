@@ -15,10 +15,14 @@ export default {
             type: String,
             default: "md",
         },
+        bgColor: {
+            type: String,
+            default: "gray-100",
+        },
     },
     computed: {
         myClass() {
-            return `shadow flex flex-col p-${this.padding} border-${this.borderWidth} rounded-${this.borderRadius} border-gray-600 bg-gray-100`;
+            return `shadow flex flex-col p-${this.padding} border-${this.borderWidth} rounded-${this.borderRadius} border-gray-600 bg-${this.bgColor}`;
         },
     },
     render: function(h) {

@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "rm -rf dist && nuxt generate && cd dist && surge ./ --domain http://nuxt-components.surge.sh"
+    "deploy": "rm -rf dist && nuxt generate && cd dist && surge ./ --domain https://nuxt-components.surge.sh"
   },
   "dependencies": {
     "nuxt": "^2.13.0",
