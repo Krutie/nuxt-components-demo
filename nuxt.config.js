@@ -31,7 +31,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxtjs/tailwindcss", "kru-components/src/nuxt"],
+  buildModules: ["@nuxtjs/tailwindcss", "kru-components/nuxt"],
 
   /* Module Option as a Boolean */
   // components: true,
