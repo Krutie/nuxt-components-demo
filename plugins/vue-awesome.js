@@ -14,6 +14,6 @@ import "vue-awesome/icons/box-open";
 import "vue-awesome/icons/brands/github";
 
 /* Register component globally */
-import Icon from "vue-awesome/components/Icon";
+import Icon from "vue-awesome/components/Icon.vue";
 
 Vue.component("icon", Icon);

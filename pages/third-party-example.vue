@@ -3,7 +3,7 @@
     <div class="pb-5">
       <h2 class="text-xl text-center py-4">
         <span class="font-bold"> E. </span>
-        Third-party component library
+        Third-party component library.
       </h2>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -17,3 +17,11 @@ button {
   @apply bg-indigo-700 p-3 border rounded-md text-white;
 }
 </style>
+<script>
+export default {
+  mounted() {
+    console.log("3rd party");
+    console.log("3rd party", this);
+  },
+};
+</script>

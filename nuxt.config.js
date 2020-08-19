@@ -1,5 +1,6 @@
 export default {
   mode: "universal",
+  target: "static",
   /*
    ** Headers of the page
    */
@@ -23,11 +24,11 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["~/assets/css/tailwind.css"],
+  // css: ["~/assets/css/tailwind.css"],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/vue-awesome"],
+  plugins: [{ src: "~/plugins/vue-awesome.js" }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -67,11 +68,11 @@ export default {
   */
   // ignore: "pages/lazy-loading-example.vue",
 
-  tailwindcss: {
-    configPath: "~/tailwind.config.js",
-    cssPath: "~/assets/css/tailwind.css",
-    exposeConfig: true,
-  },
+  // tailwindcss: {
+  //   configPath: "~/tailwind.config.js",
+  //   cssPath: "~/assets/css/tailwind.css",
+  //   exposeConfig: true,
+  // },
 
   // ** Nuxt.js modules
   modules: [],
@@ -84,7 +85,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-
-    extend(config, ctx) {},
+    // extend(config, ctx) {},
   },
 };

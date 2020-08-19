@@ -1,22 +1,22 @@
 {
-  "name": "nuxt-components-example",
-  "version": "1.0.0",
-  "description": "Nuxt component module example",
-  "author": "Krutie Patel",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "deploy": "rm -rf dist && nuxt generate && cd dist && surge ./ --domain https://nuxt-components.surge.sh"
-  },
-  "dependencies": {
-    "kru-components": "^0.1.4",
-    "nuxt": "^2.14.1",
-    "vue-awesome": "^4.0.2"
-  },
-  "devDependencies": {
-    "@nuxtjs/tailwindcss": "^2.0.0"
-  }
+    "name": "nuxt-components-example",
+    "version": "1.0.0",
+    "description": "Nuxt component module example",
+    "author": "Krutie Patel",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "deploy": "rm -rf dist && nuxt generate && cd dist && surge ./ --domain https://nuxt-components.surge.sh"
+    },
+    "dependencies": {
+        "@nuxtjs/tailwindcss": "^3.0.0",
+        "nuxt": "^2.14.1",
+        "vue-awesome": "^4.1.0"
+    },
+    "devDependencies": {
+        "kru-components": "^0.1.4"
+    }
 }
