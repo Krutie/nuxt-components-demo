@@ -12,10 +12,10 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || "",
-      },
+        content: process.env.npm_package_description || ""
+      }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   /*
    ** Customize the progress-bar color
@@ -44,23 +44,33 @@ export default {
 
     // Module Option as an array of Objects
     {
-      path: "~/components/layout/",
+      path: "~/components/layout/"
     },
     {
-      path: "~/components/ui-2/BaseButton/",
+      path: "~/components/ui-2/BaseButton/"
     },
     {
       path: "~/components/ui-2/MagicButton/",
-      extensions: ["vue"],
+      extensions: ["vue"]
     },
     {
-      path: "~/components/ui-2/",
+      path: "~/components/ui-2/"
       // prefix: "aex",
       // ignore: ["**/*.js"], // will ignore js files found directly under components/ui-2 and sub-folders
       // ignore: ["**/Card/*.js"], // will ignore js files found under components/ui-2/card
       // ignore: ["**/List/*.js"], // will ignore js files found under components/ui-2/list
-    },
+    }
   ],
+
+  storybook: {
+    port: 4000,
+    // addons: ["@storybook/addon-controls", "@storybook/addon-notes"],
+    stories: [],
+    webpackFinal(config) {
+      // manipulate webpack config
+      return config;
+    }
+  },
 
   /* top-level ignore property
      lazy-loading-example.vue page won't be generated during 
@@ -81,10 +91,10 @@ export default {
    */
   build: {
     additionalExtensions: ["jsx"],
-    transpile: [/^vue-awesome/],
+    transpile: [/^vue-awesome/]
     /*
      ** You can extend webpack config here
      */
     // extend(config, ctx) {},
-  },
+  }
 };
